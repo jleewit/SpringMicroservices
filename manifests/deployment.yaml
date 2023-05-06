@@ -2,7 +2,7 @@ kind: "Deployment"
 apiVersion: "apps/v1"
 metadata:
   name: productms
-  namespace: nlilaramani-dev
+  namespace: jayhyuklee-dev
   labels:
     app: productms
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: productms
-          image: image-registry.openshift-image-registry.svc:5000/nlilaramani-dev/productms
+          image: image-registry.openshift-image-registry.svc:5000/jayhyuklee-dev/productms
           ports:
             - containerPort: 8080
               protocol: "TCP"
