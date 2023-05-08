@@ -2,7 +2,7 @@ kind: "Deployment"
 apiVersion: "apps/v1"
 metadata:
   name: {{ .Release.Name }}-productms
-  namespace: nlilaramani-dev
+  namespace: jayhyuklee-dev
   labels:
     app: productms
 spec:
