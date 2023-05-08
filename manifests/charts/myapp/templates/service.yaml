@@ -10,4 +10,8 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    app: productms
+#
+#  the following selector had some issues -- was not creating respective PODs
+#    app.kubernetes.io/instance: {{ .Release.Name }}
+#  
